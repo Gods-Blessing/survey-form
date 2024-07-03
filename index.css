@@ -1,0 +1,151 @@
+:root{
+    --green:rgba(40, 153, 70, 1);
+    --darkGreen:rgba(3, 92, 32, 1);
+    --lignDarkGreen:rgba(3, 92, 32, 0.2);
+    --white:rgba(247, 250, 248, 1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(var(--lignDarkGreen), var(--green));
+    font-family: "Roboto",sans-serif;
+    min-height: 100vh;
+}
+
+.sectionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.mainContainer{
+    height: 90%;
+    width: 80%;
+    padding: 30px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+#heading{
+    color: var(--darkGreen);
+    font-size: 30px;
+}
+
+#formDescription{
+    margin: 15px 0px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#formStyle{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    @media screen and (max-width:600px){
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+#formStyle > section{
+    flex:1;
+    gap: 20px;
+}
+
+.textContainers{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0px 0px 10px 0px;
+}
+
+.textContainers > label{
+    font-weight: 600;
+}
+
+.textContainers > input, .textContainers > select{
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.3);
+    font-size: 16px;
+    color: var(--darkGreen);
+}
+
+.textContainers > input::placeholder{
+    color: var(--darkGreen);
+}
+
+.ageRangeContainer{
+    position: relative;
+    border: 3px solid rgba(128, 128, 128, 0.6);
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    margin: 20px 0px 10px 0px;
+}
+
+.ageRangeContainer > label{
+    position: absolute;
+    top: 0px;
+    background-color: var(--white);
+    transform: translateY(-50%);
+    padding: 0px 5px;
+    font-weight: 600;
+}
+
+.radioContainer{
+    flex: 1;
+}
+
+.radioContainer > div{
+    margin: 10px 0px 0px 0px;
+}
+
+.radioInputContainer > div{
+    margin: 10px 0px 0px 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.radioInputContainer label{
+    font-weight: 600;
+}
+
+.textAreaContainer{
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textAreaContainer > label{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.textAreaContainer > textarea{
+    padding: 5px;
+    width: 80%;
+    @media screen and (max-width:600px){
+        width: unset;
+    }
+}
+
+.submitBtn{
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: var(--darkGreen);
+    border: none;
+    font-size: 16px;
+    color: var(--white);
+}

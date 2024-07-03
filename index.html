@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <section class="sectionContainer">
+        <main class="mainContainer">
+            <section class="">
+                <h1 id="heading">Survey Form</h1>
+                <p id="formDescription">Fell free to answer the questions below based on your own experience and opinion. If you are not convenient in answering a particular question please skip it by answering "No". Every answer would be very appreciated. Thank you for your time.</p>
+            </section>
+            <form id="formStyle">
+                <section>
+                    <div class="textContainers">
+                        <label for="user_name">Your Name</label>
+                        <input id="user_name" type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="textContainers">
+                        <label for="user_address">Your Email Address</label>
+                        <input id="user_address" type="text" placeholder="user@user.com">
+                    </div>
+                    <div class="textContainers">
+                        <label for="user_phone_number">Your Phone Number</label>
+                        <input id="user_phone_number" type="number" placeholder="9999999999" maxlength="10">
+                    </div>
+                    <div class="textContainers">
+                        <label for="user_living_place">Where do you live ?</label>
+                        <select name="" id="user_living_place">
+                            <option value="">Select</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Chennai">Chennai</option>
+                        </select>
+                    </div>
+                    <!-- age range -->
+                    <div class="ageRangeContainer">
+                        <label for="">Age</label>
+                        <div class="radioContainer">
+                            <div>
+                                <input type="radio" name="age" id="age_15_20">
+                                <label for="age_15_20">15-20</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="age" id="age_20_30">
+                                <label for="age_20_30">20-30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="age" id="age_31_40">
+                                <label for="age_31_40">31-40</label>
+                            </div>
+                        </div>
+    
+                        <div class="radioContainer">
+                            <div>
+                                <input type="radio" name="age" id="age_41_50">
+                                <label for="age_41_50">41-50</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="age" id="preferNotToSay">
+                                <label for="preferNotToSay">Prefer not to say</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proficiency -->
+                    <div class="radioInputContainer">
+                        <label for="">How would you rate your proficiency in Coding</label>
+                        <div>
+                            <input type="radio" id="beginner" name="codingProficiency">
+                            <label for="beginner">Beginner</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="intermediate" name="codingProficiency">
+                            <label for="intermediate">Intermediate</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="advance" name="codingProficiency">
+                            <label for="advance">Advance</label>
+                        </div>
+                    </div>
+                </section>
+    
+                <section>
+                    <div class="radioInputContainer">
+                        <label for="attendedCodingContest">How you ever appeared in any coding contest ?</label>
+                        <div>
+                            <input type="radio" id="condingContestYes" name="attendedCodingContest">
+                            <label for="condingContestYes">Beginner</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="condingContestNo" name="attendedCodingContest">
+                            <label for="condingContestNo">Intermediate</label>
+                        </div>
+                    </div>
+                    <div class="textAreaContainer">
+                        <label for="aspiration">Discuss what drives your passion for coding and outline your aspiration in the field.</label>
+                        <textarea name="aspiration" id="aspiration" cols="30" rows="4"></textarea>
+                    </div>
+                    <div class="textAreaContainer">
+                        <label for="coding_challenges">What are some of the challenges you face while coding ?</label>
+                        <textarea name="codingChallenges" id="coding_challenges" cols="30" rows="4"></textarea>
+                    </div>
+                    <div class="textAreaContainer">
+                        <label for="lis_data_structure">Please list the Data Structure you have a strong understanding of.</label>
+                        <textarea name="listDataStructure" id="lis_data_structure" cols="30" rows="4"></textarea>
+                    </div>
+                    <button class="submitBtn" type="submit">Submit Form</button>
+                </section>
+            </form>
+        </main>
+    </section>
+</body>
+</html>
